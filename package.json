@@ -1,0 +1,35 @@
+{
+  "name": "quiubo-chatgpt",
+  "version": "1.0.0",
+  "description": "Aplicacion basada en electron para usar ChatGpt en el escritorio",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build:windows": "electron-builder --win",
+    "build:mac": "electron-builder --mac",
+    "build": "npm run build:windows && npm run build:mac"
+  },
+  "build": {
+    "appId": "com.electron.quiubo.chatgpt",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "target": "dmg",
+    },
+    "win": {
+      "target": "nsis",
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "keywords": [],
+  "author": "Victor Hugo Cornejo Calderon",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "25.3.0",
+    "electron-builder": "24.4.0"
+  }
+}
