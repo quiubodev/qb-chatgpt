@@ -1,13 +1,23 @@
 {
   "name": "quiubo-chatgpt",
   "version": "1.0.0",
+  "author": {
+    "name": "Victor Hugo Cornejo Calderon",
+    "email": "me@victorcornejo.com"
+  },
+  "license": "MIT",
   "description": "Aplicacion basada en electron para usar ChatGpt en el escritorio",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:quiubodev/qb-chatgpt.git"
+  },
   "scripts": {
     "start": "electron .",
-    "build:windows": "electron-builder --win",
-    "build:mac": "electron-builder --mac",
-    "build": "npm run build:windows && npm run build:mac"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "release": "build"
   },
   "build": {
     "appId": "com.electron.quiubo.chatgpt",
@@ -16,23 +26,24 @@
     },
     "mac": {
       "category": "public.app-category.social-networking",
-      "target": "dmg"
+      "target": "dmg",
+      "icon": "icons/qb-chat-gpt-round.icns"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "icons/qb-chat-gpt-round.icon"
     },
     "linux": {
-      "target": "AppImage"
+      "target": "AppImage",
+      "icon": "icons/qb-chat-gpt-round.png"
     }
   },
   "keywords": [],
-  "author": "Victor Hugo Cornejo Calderon",
-  "license": "ISC",
   "devDependencies": {
     "electron": "25.3.0",
     "electron-builder": "24.4.0"
   },
   "dependencies": {
-    "electron-settings": "^4.0.2"
+    "electron-updater": "6.1.1"
   }
 }
