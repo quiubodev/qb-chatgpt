@@ -20,25 +20,34 @@
     "release": "build"
   },
   "build": {
-    "appId": "com.electron.quiubo.chatgpt",
-    "directories": {
-      "output": "dist"
-    },
+    "appId": "com.quiubo.chatgpt",
+    "productName": "Quiubo ChatGpt",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "quiubodev",
+        "repo": "qb-chatgpt"
+      }
+    ],
     "mac": {
-      "category": "public.app-category.social-networking",
+      "category": "public.app-category.developer-tools",
       "target": "dmg",
-      "icon": "icons/qb-chat-gpt-round.icns"
+      "icon": "icons/qb-chat-gpt.icns"
     },
     "win": {
       "target": "nsis",
-      "icon": "icons/qb-chat-gpt-round.icon"
+      "icon": "icons/qb-chat-gpt.icon"
     },
     "linux": {
       "target": "AppImage",
-      "icon": "icons/qb-chat-gpt-round.png"
+      "icon": "icons/qb-chat-gpt.png"
     }
   },
-  "keywords": [],
+  "keywords": [
+    "chatgpt",
+    "electron",
+    "quiubo"
+  ],
   "devDependencies": {
     "electron": "25.3.0",
     "electron-builder": "24.4.0"
