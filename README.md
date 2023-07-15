@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="./images/quiubo-chatgpt.jpg" alt="Quiubo ChatGPT" style="border-radius: 50%; width: 256px; height: 256px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 30px; margin-top: 30px;" />
+</div>
+
+
 # Quiubo Chat GPT
 
 Una aplicación sencilla pero segura que utiliza Electron para cargar el enlace de Chat GPT directamente, sin intermediarios. 
@@ -12,10 +17,6 @@ Esta aplicación te permite acceder de manera fácil y directa a la potente solu
 - Carga directa del enlace de Chat GPT sin intermediarios.
 - Comunicación segura con la solución de Chat GPT de OpenAI.
 - Permite disfrutar de la potencia y versatilidad del modelo de lenguaje GPT directamente desde la aplicación.
-
-## Capturas de Pantalla
-
-[Inserta aquí tus capturas de pantalla si las tienes]
 
 ## Cómo Usar
 

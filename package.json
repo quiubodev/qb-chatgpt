@@ -16,8 +16,7 @@
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps",
-    "release": "build"
+    "postinstall": "electron-builder install-app-deps"
   },
   "build": {
     "appId": "com.quiubo.chatgpt",
