@@ -35,7 +35,7 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "icons/qb-chat-gpt.icon"
+      "icon": "icons/qb-chat-gpt.ico"
     },
     "linux": {
       "target": "AppImage",
